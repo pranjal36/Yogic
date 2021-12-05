@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Favicons -->
+    <link href="{{ url_for('static', filename='img/Favicon.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Extra CSS Files -->
+    <link href="{{ url_for('static', filename='vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/venobox/venobox.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/owl.carousel/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+    <title>Gym</title>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+  <header id="header-session">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">Gym-HackJNU</a></h1>
+
+      <!-- <nav class="nav-menu d-none d-lg-block">
+        <div class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://www.tutorialrepublic.com/examples/images/avatar/3.jpg" class="avatar" alt="Avatar">Hi, Ben!<b class="caret"></b></a>
+          <div class="dropdown-menu">
+            <a href="/dashboard" class="dropdown-item">Dashboard</a>
+            <a href="#" class="dropdown-item">Settings</a>
+            <div class="divider dropdown-divider"></div>
+            <a href="/" class="dropdown-item"> Logout</a>
+          </div>
+        </div>
+      </nav> -->
+      <!-- .nav-menu -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+    {% block content %}
+    {% endblock %}
+  
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>That's what C Said</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/jquery.easing/jquery.easing.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/waypoints/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/venobox/venobox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <!-- Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>

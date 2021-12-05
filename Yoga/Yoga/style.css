@@ -1,0 +1,11 @@
+html,
+body {
+  margin-left: 3%;
+  margin-top: 5.2%;
+  padding: 0;
+  background-color: #0c0a2b;
+}
+canvas {
+  display: block;
+  /* box-shadow: 10px 10px grey; */
+}
